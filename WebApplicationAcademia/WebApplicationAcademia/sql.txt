@@ -1,0 +1,12 @@
+﻿/*academia_usr
+ZHRrdDFPVjEz*/
+CREATE SCHEMA `academia` ;
+CREATE TABLE `academia`.`alumno` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(50) NOT NULL,
+  `apellido1` VARCHAR(50) NULL,
+  `apellido2` VARCHAR(50) NULL,
+  `fechaNac` DATETIME NOT NULL,
+  `fechaMod` DATETIME NULL,
+  `fechaReg` DATETIME NOT NULL,
+  PRIMARY KEY (`id`));
