@@ -10,3 +10,4 @@ CREATE TABLE `academia`.`alumno` (
   `fechaMod` DATETIME NULL,
   `fechaReg` DATETIME NOT NULL,
   PRIMARY KEY (`id`));
+  create table materia(id int not null auto_increment primary key, nombre varchar(50) , decripcion varchar(100), prerequisito int not null default 0 , creditos int , semestre int );
