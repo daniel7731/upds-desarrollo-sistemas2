@@ -26,7 +26,7 @@ namespace WebApplicationAcademia.Data
                
                 using (MySqlDataReader reader = command.ExecuteReader())
                 {
-                    while (reader.Read())
+                    /*while (reader.Read())
                     {
                         // Process the retrieved data
                         Alummno e = new Alummno();       
@@ -38,7 +38,7 @@ namespace WebApplicationAcademia.Data
                         e.fechaNacimiento = DateTime.Parse(reader["fechaNac"].ToString());
                         e.fechaRegistro = DateTime.Parse(reader["fechaReg"].ToString());
                         alummnos.Add(e); 
-                    }
+                    }*/
                 }
             }
             return materias;
@@ -71,7 +71,7 @@ namespace WebApplicationAcademia.Data
                 using (MySqlConnection connection = new MySqlConnection(this.connectionString))
                 {
 
-                    connection.Open();
+                    /*connection.Open();
                     MySqlCommand command = new MySqlCommand("UPDATE `academia`.`alumno` set  nombre =@nombre, apellido1= @apellido1," +
                         " apellido2=@apellido2, fechaNac =@fechaNac" +
                         " where id = @id ", connection);
@@ -82,7 +82,7 @@ namespace WebApplicationAcademia.Data
                     command.Parameters.AddWithValue("@apellido2", alummno.apellido2);
                     command.Parameters.AddWithValue("@fechaNac", alummno.fechaNacimiento);
                     command.Parameters.AddWithValue("@id", id);
-                    command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();*/
                 }
             }catch(Exception ex)
             {
